@@ -20,7 +20,7 @@ def dot_product(vector_one, vector_two):
     return result
 
 
-def matrix_multiplication(matrixA, matrixB):
+def mult_mat(matrixA, matrixB):
     '''Función que multiplica las matrices.'''
     m_rows = len(matrixA)
     p_columns = len(matrixB[0])
@@ -41,4 +41,4 @@ A = [[0.4, 0.2, 0.4]]
 B = [[0.5,  0,  1],
      [0,  1,  0],
      [0,  1,  0]]
-print(matrix_multiplication(A, B))
+print(mult_mat(A, B))
