@@ -18,6 +18,7 @@ def dot_product(vector_one, vector_two):
 
 
 def matrix_multiplication(matrixA, matrixB):
+    '''Función que multiplica las matrices.'''
     m_rows = len(matrixA)
     p_columns = len(matrixB[0])
     result = []  # lista vacia que almacena el producto de AxB
