@@ -34,3 +34,11 @@ def matrix_multiplication(matrixA, matrixB):
             row_result.append(prod_punto)
         result.append(row_result)
     return result
+
+
+# Comprobemos resultados:
+A = [[0.4, 0.2, 0.4]]
+B = [[0.5,  0,  1],
+     [0,  1,  0],
+     [0,  1,  0]]
+print(matrix_multiplication(A, B))
