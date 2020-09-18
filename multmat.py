@@ -18,3 +18,19 @@ def dot_product(vector_one, vector_two):
     for i in range(len(vector_one)):
         result += vector_one[i] * vector_two[i]
     return result
+
+
+def matrix_multiplication(matrixA, matrixB):
+    '''Función que multiplica las matrices.'''
+    m_rows = len(matrixA)
+    p_columns = len(matrixB[0])
+    result = []  # lista vacia que almacena el producto de AxB
+    for i in range(m_rows):
+        row_result = []  # matriz para mantener la fila del producto punto.
+        rowA = get_row(matrixA, i)
+        for j in range(p_columns):
+            columnB = get_column(matrixB, j)
+            prod_punto = dot_product(rowA, columnB)
+            row_result.append(prod_punto)
+        result.append(row_result)
+    return result
